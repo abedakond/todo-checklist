@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, run the migration to apply the migrations necessary to deploy the database where your memos will be stored.
+
+```bash
+pnpm prisma migrate dev --name init
+```
+
+Commands to run the development server:
 
 ```bash
 npm run dev
